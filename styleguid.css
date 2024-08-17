@@ -1,0 +1,57 @@
+:root { 
+    --black: #000000;
+    --royal-blue: #3a79d8;
+    --white: #ffffff;
+    --gray: #A2A2A2;
+    --darkgray: #1D1D1D;
+    
+
+    /* --font-size-s: 12px;
+    --font-size-m: 1rem;
+    --font-size-l: 20px;
+    --font-size-xl: 24px;
+    --font-size-xxl: 2rem;
+    --font-size-xxxl: 40px; */
+
+    --border-radius-s: 8px;
+    --border-radius-m: 16px; 
+
+    --font-family-hack: "Hack", sans-serif;
+    --font-family-roboto: "Roboto", Helvetica;
+ }
+
+  .hack-16px {
+  color: var(--white);
+  font-family: var(--font-family-hack);
+  font-size: 1rem;
+  line-height: var(--leading, 1.5rem);
+  letter-spacing: var(--letter-spacing, 0.0625rem);
+} 
+
+.hack-32px {
+  color: var(--white);
+  font-family: var(--font-family-hack);
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: var(--body-bold-leading, 2.625rem);
+  letter-spacing: var(--letter-spacin, 0.0625rem);
+}
+
+.roboto-16px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: var(--leading, 1.5rem); /* 150% */
+  letter-spacing: var(--letter-spacing, 0.03125rem);
+}
+
+.roboto-12px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: var(--index-body-leading, 1.125rem); /* 150% */
+  letter-spacing: var(--index-body-letter-spacing, 0.03125rem);
+}
+  
