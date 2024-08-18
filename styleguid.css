@@ -1,32 +1,32 @@
-:root { 
-    --black: #000000;
-    --royal-blue: #3a79d8;
-    --white: #ffffff;
-    --gray: #A2A2A2;
-    --darkgray: #1D1D1D;
-    
+:root {
+  --black: #000000;
+  --royal-blue: #3B7AD9;
+  --white: #ffffff;
+  --gray: #A2A2A2;
+  --darkgray: #1D1D1D;
 
-    /* --font-size-s: 12px;
+
+  /* --font-size-s: 12px;
     --font-size-m: 1rem;
     --font-size-l: 20px;
     --font-size-xl: 24px;
     --font-size-xxl: 2rem;
     --font-size-xxxl: 40px; */
 
-    --border-radius-s: 8px;
-    --border-radius-m: 16px; 
+  --border-radius-s: 0.5rem;
+  --border-radius-m: 1rem;
 
-    --font-family-hack: "Hack", sans-serif;
-    --font-family-roboto: "Roboto", Helvetica;
- }
+  --font-family-hack: "Hack", sans-serif;
+  --font-family-roboto: "Roboto", Helvetica;
+}
 
-  .hack-16px {
+.hack-16px {
   color: var(--white);
   font-family: var(--font-family-hack);
   font-size: 1rem;
   line-height: var(--leading, 1.5rem);
   letter-spacing: var(--letter-spacing, 0.0625rem);
-} 
+}
 
 .hack-32px {
   color: var(--white);
@@ -37,21 +37,70 @@
   letter-spacing: var(--letter-spacin, 0.0625rem);
 }
 
-.roboto-16px {
-  color: var(--white);
-  font-family: var(--font-family-roboto);
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: var(--leading, 1.5rem); /* 150% */
-  letter-spacing: var(--letter-spacing, 0.03125rem);
-}
-
 .roboto-12px {
   color: var(--white);
   font-family: var(--font-family-roboto);
   font-size: 0.75rem;
   font-weight: 300;
-  line-height: var(--index-body-leading, 1.125rem); /* 150% */
+  line-height: var(--index-body-leading, 1.125rem);
+  /* 150% */
   letter-spacing: var(--index-body-letter-spacing, 0.03125rem);
 }
-  
+
+.roboto-16px {
+  color: var(--white);
+  font-family: var(--font-family-roboto);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: var(--leading, 1.5rem);
+  /* 150% */
+  letter-spacing: var(--letter-spacing, 0.03125rem);
+}
+
+/* h4 */
+.roboto-20px {
+  color: var(--white, #FFF);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-body-larger, 1.25rem);
+  font-style: normal;
+  font-weight: 500;
+  line-height: var(--leading, 1.5rem);
+  /* 120% */
+  letter-spacing: var(--letter-spacing, 0.03125rem);
+}
+
+/* h3 */
+.roboto-32px {
+  color: var(--white, #FFF);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-body-bold, 2rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--body-bold-leading, 2.625rem);
+  /* 131.25% */
+  letter-spacing: 0.1rem;
+}
+
+/* h2 */
+.roboto-40px {
+  color: var(--white, #FFF);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-heading, 2.5rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--heading-leading, 3.0625rem);
+  /* 122.5% */
+  letter-spacing: var(--heading-letter-spacing, 0.1875rem);
+}
+
+/* h1 */
+.roboto-48px {
+  color: var(--white, #FFF);
+  font-family: var(--font-family-roboto);
+  font-size: var(--font-index-heading, 3rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: var(--index-heading-leading, 3.5rem);
+  /* 116.667% */
+  letter-spacing: var(--index-heading-letter-space, 0.125rem);
+}

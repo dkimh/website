@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* General Styles */
 body {
     margin: 0;
@@ -7,11 +11,22 @@ body {
     background-color: var(--black);
     display: flex;
     flex-direction: column;
+    -ms-overflow-style: none;
 }
+
+/* keep scroll func but remove scroll bar */
+::-webkit-scrollbar {
+    display: none;
+  }
+
 
 /* content area */
 .content-area {
-    padding: 4rem 12rem;
+    padding: 6rem 12rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* General header & footer styles */
@@ -29,7 +44,8 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    position: relative;
+    position: fixed;
+    z-index: 4;
 }
 
 footer {
@@ -66,4 +82,336 @@ ul li a:hover {
     padding: 0.5rem;
     font-size: 0.8rem;
     color: var(--gray);
+}
+
+ /* Project Info */
+ .hero h2 {
+    margin: 1.25rem 0;
+ }
+
+ .hero ul {
+    display: flex;
+    gap: 1.25rem;
+}
+
+img #VeriPrix-Thumbnail {
+    position: relative;
+    left: -12rem; /* padding 크기만큼 왼쪽으로 이동 */
+    width: calc(100% + 24rem); /* 패딩 양쪽을 더한 값만큼 너비 증가 */
+    height: auto;
+    border-radius: var(--border-radius-s);
+}
+
+.project-details {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 18rem;
+}
+
+.project-details ul.details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+
+ul.details div { /* names */
+    display: flex;
+    justify-content: space-between;
+    gap: 0.8rem;
+}
+
+.main-content {
+    display: flex;
+    gap: 2rem; /* Adds space between index and content */
+}
+
+/* Project Content */
+/* .project-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem; 
+    margin-top: 6rem;
+} */
+
+/* index */
+.index {
+    margin-top: 80px;
+    flex-grow: 1;
+    height: 100vh;
+}
+
+.index {
+    position: sticky;
+    top: 0; 
+    width: 20%; /* Adjust width as needed */
+    padding: 1rem; /* Optional: Adds padding inside the sticky index */
+    z-index: 3; /* Ensure it stays above other content */
+}
+
+
+.index h1 {
+    margin: 0 0 0.25rem 0;
+    padding: 0 1rem;
+}
+
+.index p {
+    margin: 0 0 2.25rem 0;
+    padding: 0 1rem;
+}
+
+.index ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+}
+
+.index ul li {
+    margin-bottom: 1rem;
+}
+
+.index ul li a {
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--white);
+    transition: background-color 0.3s ease;
+}
+
+.index ul li a:hover {
+    background-color: var(--darkgray);
+    border-radius: var(--border-radius-s);
+}
+
+.content h3 {
+    margin: 0 0 1.25rem 0;
+}
+
+.content p {
+    margin: 0 0 2rem 0;
+}
+
+/* Box content for each section */
+.box {
+    margin: 6rem 0 12rem 0;
+}
+
+/* title style */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.line {
+    flex-grow: 1;
+    border: 0.1rem solid var(--white);
+    align-items: center;
+}
+
+/* Overview section */
+#Overview div {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(12rem, 1fr));
+    justify-items: center;
+    gap: 0.5rem; 
+}
+
+#Overview .overview-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto; 
+}
+
+#Overview .overview-card img:first-of-type {
+    width: calc(100% - 1rem);
+    height: auto;
+    margin-bottom: 0.75rem;
+    /* position: relative; */
+
+}
+
+.overview-card h4 {
+    width: 100%;
+    height: auto;
+    padding: 0.75rem 0;
+    margin: 0;
+    text-align: center;
+}
+
+#background-title {
+    background-image: url(../assets/VeriPrix/Arrow1.png);
+    background-size: 100% 100%;  
+}
+
+#problem-title {
+    background-image: url(../assets/VeriPrix/Arrow2.png);
+    background-size: 100% 100%;  
+}
+
+#solution-title {
+    background-image: url(../assets/VeriPrix/Arrow3.png);
+    background-size: calc(100% - 1rem) 100%;
+    background-repeat: no-repeat;  
+}
+
+.overview-card p {
+    margin: 0;
+    text-align: left;
+    padding: 0 0.25rem;
+}
+
+/* Background Content */
+#background-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-template-areas: 
+        "img img text text"
+        "title title icons icons";
+    gap: 1.25rem;
+}
+
+img {
+    grid-area: img;
+    width: 100%;
+    height: auto;
+    border-radius: var(--border-radius-s);
+}
+
+.text {
+    grid-area: text; 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+p, h4 {
+    margin: 0;
+}
+
+.text h4 {
+    color: var(--royal-blue);
+}
+
+#opaque-pricing {
+    grid-area: title;
+}
+
+#opaque-pricing-icons {
+    grid-area: icons;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(1rem, 20rem));
+    gap: 4rem;
+    padding-top: 2rem;
+}
+
+#opaque-pricing-icons img{
+    width: 100%;
+    height: auto;
+}
+
+#opaque-pricing-icons p {
+    text-align: center;;
+}
+
+#problem-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1.25rem;
+}
+
+#problem-content ol {
+    flex: 1;
+    min-width: 40%;
+}
+
+#problem-content ol li {
+    padding-bottom: 1.25rem;
+}
+
+#problem-content img {
+    flex: 1;
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+/* Solution Section */
+
+#solution-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.step {
+    display: grid;
+    grid-template-columns: 1fr 4fr 6fr;
+    align-items: center;
+    border-radius: var(--border-radius-m);
+    background: linear-gradient(90deg, #3B7AD9 0%, #1e1e1e 40%, #111111 80%, #000 100%);
+    padding: 1.25rem 2rem;
+    /* width: calc(100%-2rem); */
+}
+
+.step-icon img {
+    width: 4rem;
+    height: auto;
+    margin-right: 1.75rem;
+}
+
+.step-content {
+    display: flex;
+
+}
+
+.step-title {
+    margin-bottom: 5px;
+    margin-right: 2rem;
+}
+
+.connector {
+    width: 0.5rem;
+    align-self: left;
+}
+
+
+/* Final Product Section */
+#final-product-content {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.product-row {
+    display: flex;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 2rem;
+}
+.product-column {
+    width: 100%;
+    display: flex;
+    gap: 1.25rem;
+}
+
+.text {
+    flex: 1;
+    padding: 0;
+    min-width: 20rem;
+}
+
+.product-column div {
+    width: 100%;
+    height: 20%;
 }

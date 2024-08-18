@@ -1,47 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danielle Kim Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Danielle Kim - VeriPrix</title>
+    <link rel="stylesheet" href="../css/veriprix.css">
     <!-- Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <!-- Hack -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css">
-    <link rel="stylesheet" href="styleguid.css">
+    <link rel="stylesheet" href="../styleguid.css">
 </head>
+
 <body>
     <!-- Header Section -->
     <header class="site-chrome">
         <nav class="left-header">
             <ul>
-                <li><a href="#" class="hack-16px">Work</a></li>
-                <li><a href="#" class="hack-16px">Fun</a></li>
+                <li><a href="../index.html" class="hack-16px">Work</a></li>
+                <li><a href="./fun.html" class="hack-16px">Fun</a></li>
             </ul>
         </nav>
         <nav class="right-header">
             <ul>
-                <li><a href="#" class="hack-16px">About</a></li>
+                <li><a href="./about.html" class="hack-16px">About</a></li>
                 <li><a href="#" class="hack-16px">CV</a></li>
             </ul>
         </nav>
     </header>
-   
+
+    <!-- Content Area -->
+    <section class="content-area">
+        <!-- Hero section -->
+        <section class="hero">
+            <h2 class="roboto-40px">VeriPrix</h2>
+            <ul class="roboto-16px">
+                <li>Veriprix offers patients reliable and transparent drug pricing at local pharmacies, empowering them
+                    to make informed decisions and find the best medication prices.</li>
+                <li>MIT Hacking Medicine Award Winner</li>
+            </ul>
+            <img src="../assets/VeriPrix/Thumbnail.png" alt="VeriPrix Thumbnail" id="VeriPrix-Thumbnail">
+            <div class="roboto-16px project-details">
+                <ul class="details">
+                    <li>Project Type</li>
+                    <li>Hackathon</li>
+                    <li>App UI/UX</li>
+                </ul>
+                <ul class="details">
+                    <li>Timeline</li>
+                    <li>2023 April</li>
+                </ul>
+                <ul class="details">
+                    <li>My Role</li>
+                    <li>UI/UX Designer</li>
+                    <li>Researcher</li>
+                </ul>
+                <ul class="details" id="">
+                    <li>Team</li>
+                    <div>
+                        <li>Danielle Kim</li>
+                        <li>Anthony Li</li>
+                        <li>Alan Zhuang</li>
+                    </div>
+                    <div>
+                        <li>Dustin Cotliar MD, MPH</li>
+                        <li>Christine Sam, PMP</li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Container for index and content -->
+        <div class="main-content">
+            <!-- Index (Sticky Navigation) -->
+            <section class="index">
+                <div class="sticky">
+                    <h1 class="roboto-48px">VeriPrix</h1>
+                    <p class="roboto-16px">2022 - App Design</p>
+                    <ul class="roboto-16px">
+                        <li><a href="#Overview">Overview</a></li>
+                        <li><a href="#Background">Background</a></li>
+                        <li><a href="#Problem">Problem</a></li>
+                        <li><a href="#Solution">Solution</a></li>
+                        <li><a href="#FinalProduct">Final Product</a></li>
+                        <li><a href="#Takeaways">Takeaways</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Project Content -->
+            <section class="project-content">
+                <!-- Your content sections go here -->
+                <div class="box" id="Overview">
+                    <section class="title">
+                        <h3 class="roboto-32px">Overview</h3>
+                        <hr class="line">
+                    </section>
+                    <div>
+                        <div class="overview-card">
+                            <img src="../assets/VeriPrix/Overview-Background.png" alt="Overview Background">
+                            <h4 id="background-title" class="roboto-20px">Background</h4>
+                            <p class="roboto-16px">The cost of the same medication varies among different pharmacies.
+                            </p>
+                        </div>
+                        <div class="overview-card">
+                            <img src="../assets/VeriPrix/Overview-Problem.png" alt="Overview Problem">
+                            <h4 id="problem-title" class="roboto-20px">Problem</h4>
+                            <p class="roboto-16px">Insurance costs become convoluted due to intermediaries such as
+                                Pharmacy Benefit Managers (PBM) and wholesalers.</p>
+                        </div>
+                        <div class="overview-card">
+                            <img src="../assets/VeriPrix/Overview-Solution.png" alt="Overview Solution">
+                            <h4 id="solution-title" class="roboto-20px">Solution</h4>
+                            <p class="roboto-16px">Provide accurate and transparent drug pricing using data analytics.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="Background">
+                    <section class="title">
+                        <h3 class="roboto-32px">Background</h3>
+                        <hr class="line">
+                    </section>
+                    <div id="background-content">
+
+                        <img src="../assets/VeriPrix/Price-Variation.gif" alt="Price Variation">
+
+                        <div class="text">
+                            <p class="roboto-16px">The cost of the same medication can vary depending on the pharmacy.
+                            </p>
+                            <h4 class="roboto-20px">Price variations between pharmacies can range from 170% to 330%.
+                            </h4>
+                            <p class="roboto-16px">When patients are unable to access their medications or view the
+                                costs for each one, it leads to dissatisfaction and poor adherence.</p>
+                        </div>
+                        <div id="opaque-pricing">
+                            <h4 class="roboto-20px">The Harms of Opaque Pricing</h4>
+                        </div>
+                        <div id="opaque-pricing-icons">
+                            <div>
+                                <img src="../assets/VeriPrix/Patients-text.png">
+                                <p class="roboto-16px">Increased Cost</p>
+                            </div>
+                            <div>
+                                <img src="../assets/VeriPrix/Doctors-text.png">
+                                <p class="roboto-16px">Compromises treatment decisions</p>
+                            </div>
+                            <div>
+                                <img src="../assets/VeriPrix/Payors-text.png">
+                                <p class="roboto-16px">Higher expenditures</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="Problem">
+                    <section class="title">
+                        <h3 class="roboto-32px">Problem</h3>
+                        <hr class="line">
+                    </section>
+                    <div id="problem-content">
+                        <ol>
+                            <li>Insurance pricing is clandestine and convoluted due to intermediaries such as Pharmacy
+                                Benefits Manager (PBM) and Wholesaler.</li>
+                            <li>No platform shows insured drug pricing while 89% of the U.S. population has insurance.
+                            </li>
+                        </ol>
+                        <div>
+                            <img src="../assets/VeriPrix/med-market.gif">
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="Solution">
+                    <section class="title">
+                        <h3 class="roboto-32px">Solution</h3>
+                        <hr class="line">
+                    </section>
+                    <div id="solution-content">
+                        <!-- Step 1 -->
+                        <div class="step">
+                            <div class="step-icon">
+                                <img src="../assets/VeriPrix/Payor.png" alt="Insurance Company">
+                            </div>
+                            <div class="step-title roboto-20px">Insurance Company</div>
+                            <div class="step-description roboto-16px">All data will be obtained from data brokers and
+                                insurance companies and directed to a proprietary databank.</div>
+                        </div>
+
+                        <div class="connector">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 41" fill="none">
+                                <path
+                                    d="M3.64644 40.3536C3.84171 40.5488 4.15829 40.5488 4.35355 40.3536L7.53553 37.1716C7.73079 36.9763 7.73079 36.6597 7.53553 36.4645C7.34027 36.2692 7.02369 36.2692 6.82843 36.4645L4 39.2929L1.17157 36.4645C0.976309 36.2692 0.659727 36.2692 0.464465 36.4645C0.269202 36.6597 0.269202 36.9763 0.464464 37.1716L3.64644 40.3536ZM3.5 -2.18557e-08L3.5 40L4.5 40L4.5 2.18557e-08L3.5 -2.18557e-08Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="step">
+                            <div class="step-icon">
+                                <img src="../assets/VeriPrix/databank.png" alt="Databank">
+                            </div>
+
+                            <div class="step-title roboto-20px">Proprietary Databank & Data Analysis</div>
+                            <div class="step-description roboto-16px">This approach eliminates the need for secretive
+                                pricing information from PBMs and wholesalers, thereby reducing intermediaries in the
+                                prescription drug market.</div>
+
+                        </div>
+
+                        <div class="connector">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 41" fill="none">
+                                <path
+                                    d="M3.64644 40.3536C3.84171 40.5488 4.15829 40.5488 4.35355 40.3536L7.53553 37.1716C7.73079 36.9763 7.73079 36.6597 7.53553 36.4645C7.34027 36.2692 7.02369 36.2692 6.82843 36.4645L4 39.2929L1.17157 36.4645C0.976309 36.2692 0.659727 36.2692 0.464465 36.4645C0.269202 36.6597 0.269202 36.9763 0.464464 37.1716L3.64644 40.3536ZM3.5 -2.18557e-08L3.5 40L4.5 40L4.5 2.18557e-08L3.5 -2.18557e-08Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="step">
+                            <div class="step-icon">
+                                <img src="../assets/VeriPrix/drug.png" alt="Drug Price Prediction">
+                            </div>
+
+                            <div class="step-title roboto-20px">Accurate Drug Price Prediction</div>
+                            <div class="step-description roboto-16px">Accurate drug pricing can be predicted through
+                                data analysis, making this information accessible to both physicians and patients.</div>
+
+                        </div>
+
+                        <div class="connector">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 41" fill="none">
+                                <path
+                                    d="M3.64644 40.3536C3.84171 40.5488 4.15829 40.5488 4.35355 40.3536L7.53553 37.1716C7.73079 36.9763 7.73079 36.6597 7.53553 36.4645C7.34027 36.2692 7.02369 36.2692 6.82843 36.4645L4 39.2929L1.17157 36.4645C0.976309 36.2692 0.659727 36.2692 0.464465 36.4645C0.269202 36.6597 0.269202 36.9763 0.464464 37.1716L3.64644 40.3536ZM3.5 -2.18557e-08L3.5 40L4.5 40L4.5 2.18557e-08L3.5 -2.18557e-08Z"
+                                    fill="white" />
+                            </svg>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="step">
+                            <div class="step-icon ">
+                                <img src="../assets/VeriPrix/patient.png" alt="Transparent Price">
+                            </div>
+
+                            <div class="step-title roboto-20px">Transparent Price</div>
+                            <div class="step-description roboto-16px">VeriPrix empowers insured patients with reliable
+                                and transparent pricing information at local pharmacies.</div>
+
+                        </div>
+                    </div>
+                    <div class="box" id="FinalProduct">
+                        <section class="title">
+                            <h3 class="roboto-32px">Final Product</h3>
+                            <hr class="line">
+                        </section>
+                        <div id="final-product-content">
+                            <div class="product-row">
+                                <div class="product-column text">
+                                    <h4 class="roboto-20px">Personalized Drug List</h4>
+                                    <p class="roboto-16px">Patients can save their frequently used medications and view a list of prices and
+                                        pharmacies on the main screen simultaneously.</p>
+                                </div>
+                                <div class="product-column image">
+                                    <div>
+                                        <img src="../assets/VeriPrix/1.Main Mockup.png" alt="Mobile Screen 1">
+                                    </div>
+                                    <div>
+                                        <img src="../assets/VeriPrix/2.Search.png" alt="Mobile Screen 2">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-row">
+                                <div class="product-column image">
+                                    <div>
+                                        <img src="../assets/VeriPrix/6. card scan.png" alt="Mobile Screen 3">
+                                    </div>
+                                    <div>
+                                        <img src="../assets/VeriPrix/7. confirm info.png" alt="Mobile Screen 4">
+                                    </div>
+                                </div>
+                                <div class="product-column text">
+                                    <h4 class="roboto-20px">Insurance-Based Pricing</h4>
+                                    <p class="roboto-16px">Patients can enter their insurance information to accurately display the
+                                        differences in medication coverage for each plan.</p>
+                                </div>
+                            </div>
+
+                            <div class="product-row">
+                                <div class="product-column text">
+                                    <h4 class="roboto-20px">Easy Compare & Accurate Information</h4>
+                                    <p class="roboto-16px">Patients can quickly compare medication prices across different pharmacies and
+                                        view the exact location and details of each pharmacy.</p>
+                                </div>
+                                <div class="product-column image">
+                                    <div>
+                                        <img src="../assets/VeriPrix/3.price compare.png" alt="Mobile Screen 5">
+                                    </div>
+                                    <div>
+                                        <img src="../assets/VeriPrix/5.pharma map.png" alt="Mobile Screen 5">
+                                    </div>
+                                    <div>
+                                        <img src="../assets/VeriPrix/4.med info.png" alt="Mobile Screen 6">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="box" id="Takeaways">
+                    <section class="title">
+                        <h3 class="roboto-32px">Takeaways</h3>
+                        <hr class="line">
+                    </section>
+                    <p>Your problem content goes here.</p>
+                </div> -->
+            </section>
+        </div>
+    </section>
+
     <!-- Footer Section -->
     <footer class="site-chrome">
         <p class="left-footer">© 2024 Danielle Kim</p>
         <nav>
             <ul class="right-footer">
-                <li><a href="#" class="hack-16px">LinkedIn</a></li>
+                <li><a href="https://www.linkedin.com/in/danielle-h-kim/" class="hack-16px">LinkedIn</a></li>
                 <li>|</li>
-                <li><a href="#" class="hack-16px">Email</a></li>
+                <li><a href="mailto:dkim30@risd.edu?bcc=flydanielle09@gmail.com" class="hack-16px">Email</a></li>
             </ul>
         </nav>
     </footer>
 
     <script src="scripts.js"></script>
 </body>
+
 </html>
