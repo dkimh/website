@@ -20,22 +20,33 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('mousemove', function(e) {
+    const cursor = document.querySelector('.custom-cursor');
+
+    if (cursor) {
+        cursor.style.left = `${e.clientX}px`;
+        cursor.style.top = `${e.clientY}px`;
+    }
+});
+
+
+
 // sticky index column
-// document.addEventListener('DOMContentLoaded', function() {
-//     const index = document.querySelector('.index');
-//     const stickyOffset = index.offsetTop;
+document.addEventListener('DOMContentLoaded', function() {
+    const index = document.querySelector('.index');
+    const stickyOffset = index.offsetTop;
 
-//     console.log('Sticky Offset:', stickyOffset);
+    console.log('Sticky Offset:', stickyOffset);
 
-//     function handleScroll() {
-//         console.log('Scroll Y:', window.scrollY);
-//         if (window.scrollY >= stickyOffset) {
-//             index.classList.add('sticky');
-//         } else {
-//             index.classList.remove('sticky');
-//         }
-//     }
+    function handleScroll() {
+        console.log('Scroll Y:', window.scrollY);
+        if (window.scrollY >= stickyOffset) {
+            index.classList.add('sticky');
+        } else {
+            index.classList.remove('sticky');
+        }
+    }
 
-//     window.addEventListener('scroll', handleScroll);
-// });
+    window.addEventListener('scroll', handleScroll);
+});
 

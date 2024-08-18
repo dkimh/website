@@ -12,18 +12,34 @@ body {
     display: flex;
     flex-direction: column;
     -ms-overflow-style: none;
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/* remove defualt cursor for hover elemnts (buttons) */
+a {
+    cursor: none;
 }
 
 /* keep scroll func but remove scroll bar */
 ::-webkit-scrollbar {
     display: none;
-  }
-
+}
 
 /* content area */
 .content-area {
     padding: 6rem 12rem;
-    overflow: hidden;
+    /* overflow: visible; */
 
     display: flex;
     flex-direction: column;
@@ -144,9 +160,8 @@ ul.details div { /* names */
 .index {
     position: sticky;
     top: 0; 
-    width: 20%; /* Adjust width as needed */
-    padding: 1rem; /* Optional: Adds padding inside the sticky index */
-    z-index: 3; /* Ensure it stays above other content */
+    width: 20%; 
+    padding: 8rem 1rem; 
 }
 
 
@@ -203,6 +218,7 @@ ul.details div { /* names */
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
+    padding-top: 6rem;
 }
 
 .line {
@@ -353,12 +369,12 @@ p, h4 {
 
 .step {
     display: grid;
-    grid-template-columns: 1fr 4fr 6fr;
+    grid-template-columns: 1fr 5fr 6fr;
     align-items: center;
     border-radius: var(--border-radius-m);
     background: linear-gradient(90deg, #3B7AD9 0%, #1e1e1e 40%, #111111 80%, #000 100%);
     padding: 1.25rem 2rem;
-    /* width: calc(100%-2rem); */
+    width: calc(100% - 4rem);
 }
 
 .step-icon img {
@@ -373,8 +389,8 @@ p, h4 {
 }
 
 .step-title {
-    margin-bottom: 5px;
-    margin-right: 2rem;
+    margin-right: 4rem;
+    min-width: 14rem;
 }
 
 .connector {

@@ -11,6 +11,29 @@ body {
     background-color: var(--black);
     display: flex;
     flex-direction: column;
+    -ms-overflow-style: none;
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/* remove defualt cursor for hover elemnts (buttons) */
+a {
+    cursor: none;
+}
+
+/* keep scroll func but remove scroll bar */
+::-webkit-scrollbar {
+    display: none;
 }
 
 /* content area */
@@ -98,7 +121,7 @@ ul li a:hover {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 1rem;
-    margin-top: 8rem; 
+    margin-top: 8rem;
 }
 
 .projects a {
@@ -127,13 +150,15 @@ ul li a:hover {
     object-position: 50% 50%;
     cursor: pointer;
     transition: transform 0.3s ease-out, filter 0.3s ease-out;
-    border-radius: var(--border-radius-s); /* Adjust border radius */
+    border-radius: var(--border-radius-s);
+    /* Adjust border radius */
 }
 
 .project-card:hover .project-img img {
-    transform: scale(1.25); 
-    filter: brightness(0.3) blur(2px); /* Apply brightness and blur */
-    object-fit:inherit;
+    transform: scale(1.25);
+    filter: brightness(0.3) blur(2px);
+    /* Apply brightness and blur */
+    object-fit: inherit;
 }
 
 .overlay {
@@ -142,7 +167,8 @@ ul li a:hover {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(29, 29, 29, 0.85); /* --darkgray in rgb */
+    background: rgba(29, 29, 29, 0.85);
+    /* --darkgray in rgb */
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
@@ -165,7 +191,8 @@ ul {
     align-items: center;
 }
 
-li, .dot {
+li,
+.dot {
     margin: 0 0.5rem 0 0;
 }
 
@@ -188,4 +215,3 @@ li, .dot {
 .title {
     font-weight: bold;
 }
-
