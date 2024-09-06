@@ -1,25 +1,4 @@
-// smooth scroll
-document.addEventListener('DOMContentLoaded', function() {
-    const anchorLinks = document.querySelectorAll('a[href^="#"]');
-    
-    anchorLinks.forEach(anchor => {
-        anchor.addEventListener('click', function(event) {
-            event.preventDefault();
-            
-            const targetId = this.getAttribute('href').substring(1);
-            
-            const targetElement = document.getElementById(targetId);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-});
-
+//custom cursor
 document.addEventListener('mousemove', function(e) {
     const cursor = document.querySelector('.custom-cursor');
 
@@ -31,22 +10,25 @@ document.addEventListener('mousemove', function(e) {
 
 
 
-// sticky index column
-document.addEventListener('DOMContentLoaded', function() {
-    const index = document.querySelector('.index');
-    const stickyOffset = index.offsetTop;
+// 모든 섹션 요소와 네비게이션 링크를 가져옵니다.
+const sections = document.querySelectorAll('.box');
+const navLinks = document.querySelectorAll('.index ul li a');
 
-    console.log('Sticky Offset:', stickyOffset);
-
-    function handleScroll() {
-        console.log('Scroll Y:', window.scrollY);
-        if (window.scrollY >= stickyOffset) {
-            index.classList.add('sticky');
-        } else {
-            index.classList.remove('sticky');
+// IntersectionObserver 생성
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        const id = entry.target.getAttribute('id');
+        const navLink = document.querySelector(`.index ul li a[href="#${id}"]`);
+        
+        if (entry.isIntersecting) {
+            navLinks.forEach(link => link.classList.remove('active'));
+            navLink.classList.add('active');    
         }
-    }
+    });
+}, { threshold: 0.7 }); 
 
-    window.addEventListener('scroll', handleScroll);
+// 각 섹션에 Observer 적용
+sections.forEach(section => {
+    observer.observe(section);
 });
 

@@ -77,7 +77,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: var(--body-bold-leading, 2.625rem);
-  /* 131.25% */
   letter-spacing: 0.1rem;
 }
 
@@ -89,7 +88,6 @@
   font-style: normal;
   font-weight: 700;
   line-height: var(--heading-leading, 3.0625rem);
-  /* 122.5% */
   letter-spacing: var(--heading-letter-spacing, 0.1875rem);
 }
 
@@ -101,6 +99,5 @@
   font-style: normal;
   font-weight: 700;
   line-height: var(--index-heading-leading, 3.5rem);
-  /* 116.667% */
   letter-spacing: var(--index-heading-letter-space, 0.125rem);
 }

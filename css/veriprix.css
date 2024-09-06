@@ -39,7 +39,7 @@ a {
 /* content area */
 .content-area {
     padding: 6rem 12rem;
-    /* overflow: visible; */
+    
 
     display: flex;
     flex-direction: column;
@@ -112,8 +112,8 @@ ul li a:hover {
 
 img #VeriPrix-Thumbnail {
     position: relative;
-    left: -12rem; /* padding 크기만큼 왼쪽으로 이동 */
-    width: calc(100% + 24rem); /* 패딩 양쪽을 더한 값만큼 너비 증가 */
+    left: -12rem; 
+    width: calc(100% + 24rem);
     height: auto;
     border-radius: var(--border-radius-s);
 }
@@ -139,29 +139,20 @@ ul.details div { /* names */
 
 .main-content {
     display: flex;
-    gap: 2rem; /* Adds space between index and content */
+    gap: 2rem;
+    height: auto;
 }
-
-/* Project Content */
-/* .project-content {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 1rem; 
-    margin-top: 6rem;
-} */
 
 /* index */
-.index {
-    margin-top: 80px;
-    flex-grow: 1;
-    height: 100vh;
-}
 
 .index {
     position: sticky;
     top: 0; 
     width: 20%; 
     padding: 8rem 1rem; 
+    margin-top: 80px;
+    flex-grow: 1;
+   height: 30vh;
 }
 
 
@@ -199,6 +190,12 @@ ul.details div { /* names */
     border-radius: var(--border-radius-s);
 }
 
+.index ul li a.active {
+    background-color: blue;
+    border-radius: var(--border-radius-s);
+    color: var(--white);
+}
+
 .content h3 {
     margin: 0 0 1.25rem 0;
 }
@@ -216,7 +213,7 @@ ul.details div { /* names */
 .title {
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 0.75rem;
     padding-top: 6rem;
 }
@@ -224,7 +221,7 @@ ul.details div { /* names */
 .line {
     flex-grow: 1;
     border: 0.1rem solid var(--white);
-    align-items: center;
+    /* align-items: center; */
 }
 
 /* Overview section */
